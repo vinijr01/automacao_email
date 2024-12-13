@@ -3,16 +3,16 @@ import email.message
 
 def enviar_email():
     corpo_email = """
-    <p>Olá! Tudo bem?</p>
+    <p>Olá, Tudo bem?!</p>
     <hr>
-    <p>Essa é uma forma de enviar email! usando tags em html!</p>
+    <p>Essa é uma mensagem de preenchimento para o envio do email.</p>
     """
 
     msg = email.message.Message()
 
     msg['Subject'] = 'Esses é o ASSUNTO do meu email: Email Teste'
-    msg['From'] = 'lamooreno41@gmail.com'
-    msg['To'] = 'lamooreno41@gmail.com'
+    msg['From'] = 'Emissor'
+    msg['To'] = 'Recepitor'
 
     # Senha de app do Gmail
     password = 'SenhadeEmail'
